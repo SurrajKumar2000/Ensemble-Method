@@ -1,1 +1,16 @@
+Ensemble Method consists of two types:
+
+-> Bagging (Random Forest)
+-> Boosting (AdaBoost, Gradient Boost, XGBoost)
+
+    In the image, D is the entire dataset
+                  Dm', Dm'', Dm''' are the models 
+    The Dataset from D is passed to all the models, here each model is given a small sample data (no two model will have same data sample) from the entire dataset.
+    Once the model does all the processes the output is given.
+    The voting classifier is used to check for the most common output among all the models and it is considered as the end result.
+    
+  The step where the dataset from D is getting divided to models (row sampling with replacement) is called Bootstrap.
+  The step where the common output is selected as a end result is called Aggregation.
+
+
 
